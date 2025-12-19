@@ -2,12 +2,6 @@
 
 This tap provides Homebrew formulas for various command-line tools.
 
-## Installation
-
-```bash
-brew tap zukash/tap
-```
-
 ## Available Formulas
 
 ### [notif](https://github.com/zukash/notif)
@@ -16,7 +10,7 @@ Minimal macOS Notification Center controller for keyboard shortcuts.
 
 **Install:**
 ```bash
-brew install notif
+brew install zukash/tap/notif
 ```
 
 **Commands:**
@@ -31,9 +25,16 @@ brew install notif
 
 ## Usage
 
-After tapping this repository, you can install any formula with:
+Install any formula directly with:
 
 ```bash
+brew install zukash/tap/<formula-name>
+```
+
+Or tap first, then install:
+
+```bash
+brew tap zukash/tap
 brew install <formula-name>
 ```
 

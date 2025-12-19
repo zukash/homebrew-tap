@@ -1,0 +1,32 @@
+name: Test Formulas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        formula:
+          - notif
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Audit formula
+        run: brew audit --strict Formula/${{ matrix.formula }}.rb
+
+      - name: Install formula
+        run: brew install --build-from-source Formula/${{ matrix.formula }}.rb
+
+      - name: Test formula
+        run: brew test Formula/${{ matrix.formula }}.rb

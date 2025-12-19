@@ -2,7 +2,7 @@ class Notif < Formula
   desc "Minimal macOS Notification Center controller for keyboard shortcuts"
   homepage "https://github.com/zukash/notif"
   url "https://github.com/zukash/notif/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "598a34edbd72ab4c50cf418ceee7cfc150c3dd35ef8c13eabaa1a773600c6382"
   license "MIT"
 
   def install

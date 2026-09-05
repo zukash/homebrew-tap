@@ -23,6 +23,19 @@ brew install zukash/tap/notif
 
 ---
 
+### [hidctl](https://github.com/zukash/hidctl)
+
+CLI for listing HID devices and sending or receiving raw HID reports.
+
+**Install:**
+```bash
+brew install zukash/tap/hidctl
+```
+
+**Learn more:** [github.com/zukash/hidctl](https://github.com/zukash/hidctl)
+
+---
+
 ## Usage
 
 Install any formula directly with:

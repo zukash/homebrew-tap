@@ -13,6 +13,7 @@ jobs:
       matrix:
         formula:
           - notif
+          - hidctl
     
     steps:
       - name: Checkout repository
